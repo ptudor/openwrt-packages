@@ -23,7 +23,7 @@ Test a build of the package:
 ```
 make package/galmon/{clean,compile} V=s
 ```
-```
+
 Select the Galmon package from the Utilities menu and build your image.
 
 ```
