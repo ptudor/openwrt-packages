@@ -1,0 +1,9 @@
+--- a/update-git-hash-if-necessary	2020-10-13 01:52:55.894028756 +0000
++++ b/update-git-hash-if-necessary	2020-10-13 01:54:31.996981400 +0000
+@@ -1,5 +1,5 @@
+ #!/bin/sh
+-HASH=$(git describe --always --dirty=+ | tr -d '\n')
++HASH=$(date +%Y%m%d)
+ 
+ echo \#define GIT_HASH \"$HASH\" > githash.h.tmp
+ echo $HASH > githash

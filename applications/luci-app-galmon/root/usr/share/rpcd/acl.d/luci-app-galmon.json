@@ -1,0 +1,14 @@
+{
+	"luci-app-galmon": {
+		"description": "Grant logread access to LuCI app galmon",
+		"read": {
+			"file": {
+				"/sbin/logread": [ "exec" ]
+			},
+			"uci": [ "galmon" ]
+		},
+		"write": {
+			"uci": [ "galmon" ]
+		}
+	}
+}

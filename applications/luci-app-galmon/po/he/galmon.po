@@ -1,0 +1,126 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:32
+msgid "Beidou"
+msgstr "ביידו"
+
+#: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:15
+msgid "Configuration"
+msgstr "תְצוּרָה"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:41
+msgid "Device Serial Port"
+msgstr "יציאה טורית של מכשיר"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:16
+msgid "Enable ubxtool."
+msgstr "אפשר את ubxtool."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:15
+msgid "Enabled"
+msgstr "מופעל"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:20
+msgid "GPS"
+msgstr "ג'י.פי. אס"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:24
+msgid "Galileo"
+msgstr "גלילאו"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:9
+msgid "Galmon"
+msgstr "גלמון"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:10
+msgid "Galmon Configuration."
+msgstr "תצורת גלמון."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:28
+msgid "Glonass"
+msgstr "גלונאס"
+
+#: applications/luci-app-galmon/root/usr/share/rpcd/acl.d/luci-app-galmon.json:3
+msgid "Grant logread access to LuCI app galmon"
+msgstr "הענק גישה ליומן כניסה לאפליקציית LuCI galmon"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:33
+msgid "Include Beidou satellites."
+msgstr "השתמש בלווייני ביידו."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:21
+msgid "Include GPS satellites."
+msgstr "השתמש בלווייני GPS."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:25
+msgid "Include Galileo satellites."
+msgstr "השתמש בלווייני גלילאו."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:29
+msgid "Include Glonass satellites."
+msgstr "השתמש בלווייני Glonass."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:37
+msgid "Include augmentation satellites."
+msgstr "השתמש בלווייני הגדלה."
+
+#: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:24
+msgid "Log"
+msgstr "עֵץ"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/logread.js:15
+msgid "No galmon related logs yet!"
+msgstr "עדיין אין יומנים הקשורים לגלמון!"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
+msgid "Owner"
+msgstr "בעלים"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
+msgid "Owner of this station."
+msgstr "בעל תחנה זו."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:42
+msgid "Path to serial device where receiver is attached."
+msgstr "נתיב למכשיר סדרתי שבו מחובר המקלט."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
+msgid "Remark"
+msgstr "הֶעָרָה"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
+msgid "Remark for this station."
+msgstr "הערה לתחנה זו."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
+msgid "Remote hostname of collector."
+msgstr "שם מארח מרוחק של אספן."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:36
+msgid "SBAS"
+msgstr ""
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+msgid "Station ID"
+msgstr "זיהוי תחנה"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
+msgid "Submit Destination"
+msgstr "הגש יעד"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/logread.js:24
+msgid "Syslog for ubxtool messages."
+msgstr "Syslog להודעות ubxtool."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:46
+msgid "Unique numeric identification for this station."
+msgstr "זיהוי מספרי ייחודי לתחנה זו."
+
+#: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:3
+msgid "galmon.eu ubxtool"
+msgstr ""
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:12
+msgid "uxbtool Service Configuration"
+msgstr "תצורת שירות uxbtool"

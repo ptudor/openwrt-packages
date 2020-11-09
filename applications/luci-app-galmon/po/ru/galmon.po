@@ -1,0 +1,126 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:32
+msgid "Beidou"
+msgstr "Бэйдоу"
+
+#: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:15
+msgid "Configuration"
+msgstr "Конфигурация"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:41
+msgid "Device Serial Port"
+msgstr "Последовательный порт устройства"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:16
+msgid "Enable ubxtool."
+msgstr "Включите ubxtool."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:15
+msgid "Enabled"
+msgstr "Включено"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:20
+msgid "GPS"
+msgstr "GPS"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:24
+msgid "Galileo"
+msgstr "Галилео"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:9
+msgid "Galmon"
+msgstr "Galmon"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:10
+msgid "Galmon Configuration."
+msgstr "Конфигурация Galmon"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:28
+msgid "Glonass"
+msgstr "Глонасс"
+
+#: applications/luci-app-galmon/root/usr/share/rpcd/acl.d/luci-app-galmon.json:3
+msgid "Grant logread access to LuCI app galmon"
+msgstr "Предоставить журналу доступ на чтение к приложению LuCI galmon"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:33
+msgid "Include Beidou satellites."
+msgstr "Включите спутники Бэйдоу."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:21
+msgid "Include GPS satellites."
+msgstr "Включите спутники GPS"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:25
+msgid "Include Galileo satellites."
+msgstr "Включите спутники Галилео."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:29
+msgid "Include Glonass satellites."
+msgstr "Включите спутники Глонасс."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:37
+msgid "Include augmentation satellites."
+msgstr "Включите спутники увеличения."
+
+#: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:24
+msgid "Log"
+msgstr "Журнал"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/logread.js:15
+msgid "No galmon related logs yet!"
+msgstr "Журналов, связанных с galmon, пока нет"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
+msgid "Owner"
+msgstr "Владелец"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
+msgid "Owner of this station."
+msgstr "Владелец этой станции."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:42
+msgid "Path to serial device where receiver is attached."
+msgstr "Путь к последовательному устройству, к которому подключен приемник."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
+msgid "Remark"
+msgstr "Замечание"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
+msgid "Remark for this station."
+msgstr "Замечание для этой станции."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
+msgid "Remote hostname of collector."
+msgstr "Имя удаленного хоста сборщика."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:36
+msgid "SBAS"
+msgstr "ССДК"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+msgid "Station ID"
+msgstr "Идентификация станции"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
+msgid "Submit Destination"
+msgstr "Место назначения"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/logread.js:24
+msgid "Syslog for ubxtool messages."
+msgstr "Системный журнал сообщений ubxtool."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:46
+msgid "Unique numeric identification for this station."
+msgstr "Уникальный числовой идентификатор для этой станции."
+
+#: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:3
+msgid "galmon.eu ubxtool"
+msgstr "galmon.eu ubxtool"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:12
+msgid "uxbtool Service Configuration"
+msgstr "Конфигурация службы uxbtool"

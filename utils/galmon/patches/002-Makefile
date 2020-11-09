@@ -1,0 +1,35 @@
+diff --git a/Makefile b/Makefile
+index 8097d30..a9dbfaa 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,6 +1,6 @@
+-CFLAGS = -O3 -Wall -ggdb 
++CFLAGS = -Os -Wall -ggdb
+ 
+-CXXFLAGS:= -std=gnu++17 -Wall -O3 -ggdb -MMD -MP -fno-omit-frame-pointer -Iext/CLI11 \
++CXXFLAGS:= -std=gnu++17 -Wall -Os -ggdb -MMD -MP -fno-omit-frame-pointer -Iext/CLI11 \
+ 	 -Iext/fmt-6.1.2/include/ -Iext/powerblog/ext/simplesocket -Iext/powerblog/ext/ \
+ 	 -I/usr/local/opt/openssl/include/  \
+ 	 -Iext/sgp4/libsgp4/ \
+@@ -24,8 +24,7 @@ endif
+ 
+ CHEAT_ARG := $(shell ./update-git-hash-if-necessary)
+ 
+-PROGRAMS = navparse ubxtool navnexus navcat navrecv navdump testrunner navdisplay tlecatch reporter sp3feed \
+-	galmonmon rinreport rinjoin rtcmtool gndate septool navmerge
++PROGRAMS = ubxtool
+ 
+ all: navmon.pb.cc $(PROGRAMS)
+ 
+@@ -56,7 +55,10 @@ help2man:
+ 	rm -f $(DESTDIR)$(prefix)/share/man/man1/rtcmtool.1.gz
+ 	rm -f $(DESTDIR)$(prefix)/share/man/man1/testrunner.1.gz
+ 
+-install: $(PROGRAMS) help2man
++install: $(PROGRAMS)
++	@echo "install target disabled for openwrt"
++
++originalinstall: $(PROGRAMS) help2man
+ 	$(INSTALL) -m 755 -d $(DESTDIR)$(prefix)/bin
+ 	$(foreach binaryfile,$(PROGRAMS),$(INSTALL) -s -m 755 -D ./$(binaryfile) $(DESTDIR)$(prefix)/bin/$(binaryfile);)
+ 	@echo "using cp instead of install because recursive directories of ascii"

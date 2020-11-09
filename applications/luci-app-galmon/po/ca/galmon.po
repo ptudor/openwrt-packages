@@ -1,0 +1,126 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:32
+msgid "Beidou"
+msgstr ""
+
+#: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:15
+msgid "Configuration"
+msgstr "Configuració"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:41
+msgid "Device Serial Port"
+msgstr "Port sèrie del dispositiu"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:16
+msgid "Enable ubxtool."
+msgstr "Activa ubxtool."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:15
+msgid "Enabled"
+msgstr "Activat"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:20
+msgid "GPS"
+msgstr ""
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:24
+msgid "Galileo"
+msgstr ""
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:9
+msgid "Galmon"
+msgstr ""
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:10
+msgid "Galmon Configuration."
+msgstr "Configuració de Galmon."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:28
+msgid "Glonass"
+msgstr ""
+
+#: applications/luci-app-galmon/root/usr/share/rpcd/acl.d/luci-app-galmon.json:3
+msgid "Grant logread access to LuCI app galmon"
+msgstr "Concedeix accés de lectura de registre a l’aplicació LuCI galmon"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:33
+msgid "Include Beidou satellites."
+msgstr "Utilitzeu satèl·lits Beidou."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:21
+msgid "Include GPS satellites."
+msgstr "Utilitzeu satèl·lits GPS."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:25
+msgid "Include Galileo satellites."
+msgstr "Utilitzeu satèl·lits Galileo."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:29
+msgid "Include Glonass satellites."
+msgstr "Utilitzeu satèl·lits Glonass."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:37
+msgid "Include augmentation satellites."
+msgstr "Utilitzeu satèl·lits d’augment."
+
+#: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:24
+msgid "Log"
+msgstr "Registre"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/logread.js:15
+msgid "No galmon related logs yet!"
+msgstr "Encara no hi ha registres relacionats amb galmon."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
+msgid "Owner"
+msgstr "Propietari"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
+msgid "Owner of this station."
+msgstr "Propietari d'aquesta estació."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:42
+msgid "Path to serial device where receiver is attached."
+msgstr "Camí cap al dispositiu sèrie on està connectat el receptor."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
+msgid "Remark"
+msgstr "Observació"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
+msgid "Remark for this station."
+msgstr "Observació per a aquesta estació."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
+msgid "Remote hostname of collector."
+msgstr "Nom d'amfitrió remot del col·leccionista."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:36
+msgid "SBAS"
+msgstr ""
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+msgid "Station ID"
+msgstr "Identificació de l'estació"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
+msgid "Submit Destination"
+msgstr "Enviar destinació"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/logread.js:24
+msgid "Syslog for ubxtool messages."
+msgstr "Syslog per als missatges ubxtool."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:46
+msgid "Unique numeric identification for this station."
+msgstr "Identificació numèrica única per a aquesta estació."
+
+#: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:3
+msgid "galmon.eu ubxtool"
+msgstr ""
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:12
+msgid "uxbtool Service Configuration"
+msgstr "Configuració del servei uxbtool"

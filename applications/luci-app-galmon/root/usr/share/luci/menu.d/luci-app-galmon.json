@@ -1,0 +1,31 @@
+{
+	"admin/services/galmon": {
+		"title": "galmon.eu ubxtool",
+		"order": 50,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [ "luci-app-galmon" ],
+			"uci": { "galmon": true }
+		}
+	},
+
+	"admin/services/galmon/config": {
+		"title": "Configuration",
+		"order": 1,
+		"action": {
+			"type": "view",
+			"path": "galmon/config"
+		}
+	},
+
+	"admin/services/galmon/log": {
+		"title": "Log",
+		"order": 2,
+		"action": {
+			"type": "view",
+			"path": "galmon/logread"
+		}
+	}
+}

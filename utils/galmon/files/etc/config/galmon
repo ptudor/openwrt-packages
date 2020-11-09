@@ -1,0 +1,11 @@
+config service "ubxtool"
+        option gps '1'
+        option galileo '1'
+        option glonass '0'
+        option beidou '0'
+        option sbas '1'
+        option port '/dev/ttyACM0'
+        option station '62020'
+        option destination '::1'
+        option owner 'Owner'
+        option remark 'OpenWRT'
