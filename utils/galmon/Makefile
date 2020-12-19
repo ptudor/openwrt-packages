@@ -17,7 +17,7 @@ PKG_SOURCE_URL:=https://github.com/berthubert/galmon.git
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
-PKG_BUILD_DEPENDS:=libzstd protobuf libstdcpp
+PKG_BUILD_DEPENDS:=libzstd protobuf protobuf-c/host libstdcpp
 PKG_BUILD_PARALLEL:=0
 PKG_INSTALL:=1
 
