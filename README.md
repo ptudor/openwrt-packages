@@ -10,3 +10,7 @@ make package/galmon/{clean,compile} V=s
 echo galmon-ubxtool is under Utilities category and web interface is in luci-apps category
 make menuconfig && make V=s download && time make V=s
 ```
+
+## Details
+
+See: utils/galmon/README.md

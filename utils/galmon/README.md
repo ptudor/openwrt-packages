@@ -1,7 +1,6 @@
 # Package for OpenWRT
 
 November 2020.
-Drop protobuf to 3.8 if 3.13 fails, it happened this week.
 
 ## Preparation:
 
@@ -58,6 +57,6 @@ For poll.h vs sys/poll.h
 ### 099-update-git-hash-if-necessary
 Reset to compiled date because otherwise it injects the openwrt git information
 
-## To-do
+## See Also:
 
-Web configuration of service.
+Web interface: luci-app-galmon
