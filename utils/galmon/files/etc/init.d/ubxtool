@@ -14,6 +14,7 @@ validate_galmon_config()
 		'beidou:bool' \
 		'sbas:bool' \
 		'port:string' \
+		'ubxport:uinteger' \
 		'station:uinteger' \
 		'destination:or(string,ip6addr,ip4addr)' \
 		'remark:string' \
@@ -64,6 +65,7 @@ start_instance() {
     append_bool "$cfg" beidou "-c"
     append_bool "$cfg" sbas "--sbas"
     append_arg "$cfg" port "--port"
+    append_arg "$cfg" ubxport "--ubxport"
     append_arg "$cfg" station "--station"
     append_arg "$cfg" destination "--destination"
     append_arg "$cfg" owner "--owner"

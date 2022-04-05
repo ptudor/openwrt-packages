@@ -42,6 +42,10 @@ return view.extend({
 			_('Path to serial device where receiver is attached.'));
 		o.rmempty = false;
 
+		s.option(form.Value, 'ubxport', _('Internal Reference Port'),
+			_('UART that is sending data to the device. 3 for USB, 1 for ttl.'));
+		o.rmempty = false;
+
 		s.option(form.Value, 'station', _('Station ID'),
 			_('Unique numeric identification for this station.'));
 		o.rmempty = false;

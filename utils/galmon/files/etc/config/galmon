@@ -5,6 +5,7 @@ config service "ubxtool"
         option beidou '0'
         option sbas '1'
         option port '/dev/ttyACM0'
+        option ubxport '3'
         option station '62020'
         option destination '::1'
         option owner 'Owner'
