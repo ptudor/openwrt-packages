@@ -1,0 +1,5 @@
+# Claude Code local workspace (per-machine; never committed)
+.claude/
+
+# macOS
+.DS_Store
