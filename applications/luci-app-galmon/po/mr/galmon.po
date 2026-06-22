@@ -1,5 +1,5 @@
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:32
 msgid "Beidou"
@@ -43,11 +43,11 @@ msgstr "ग्लोनास"
 
 #: applications/luci-app-galmon/root/usr/share/rpcd/acl.d/luci-app-galmon.json:3
 msgid "Grant logread access to LuCI app galmon"
-msgstr ""
+msgstr "LuCI ॲप galmon ला logread प्रवेश मंजूर करा"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:33
 msgid "Include Beidou satellites."
-msgstr "बीडोउ उपग्रह वापरा."
+msgstr "बीडौ उपग्रह वापरा."
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:21
 msgid "Include GPS satellites."
@@ -65,6 +65,10 @@ msgstr "ग्लोनास उपग्रह वापरा."
 msgid "Include augmentation satellites."
 msgstr "वाढ उपग्रह वापरा."
 
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+msgid "Internal Reference Port"
+msgstr "अंतर्गत संदर्भ पोर्ट"
+
 #: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:24
 msgid "Log"
 msgstr "लॉग"
@@ -73,11 +77,11 @@ msgstr "लॉग"
 msgid "No galmon related logs yet!"
 msgstr "अद्याप गॅल्मनशी संबंधित कोणतेही लॉग नाहीत!"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
 msgid "Owner"
 msgstr "मालक"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
 msgid "Owner of this station."
 msgstr "या स्टेशनचा मालक."
 
@@ -85,15 +89,15 @@ msgstr "या स्टेशनचा मालक."
 msgid "Path to serial device where receiver is attached."
 msgstr "जिथे रिसीव्हर जोडलेला असेल अशा सिरीयल डिव्हाइसचा पथ."
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:61
 msgid "Remark"
 msgstr "टीका"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:62
 msgid "Remark for this station."
 msgstr "या स्थानकाची टिप्पणी."
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
 msgid "Remote hostname of collector."
 msgstr "संग्राहकाचे दूरस्थ होस्टनाव"
 
@@ -101,11 +105,11 @@ msgstr "संग्राहकाचे दूरस्थ होस्टन�
 msgid "SBAS"
 msgstr "एसबीएएस"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
 msgid "Station ID"
 msgstr "स्टेशन ओळख"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
 msgid "Submit Destination"
 msgstr "गंतव्य सबमिट करा"
 
@@ -114,6 +118,10 @@ msgid "Syslog for ubxtool messages."
 msgstr "Ubxtool संदेशांसाठी Syslog."
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:46
+msgid "UART that is sending data to the device. 3 for USB, 1 for TTL."
+msgstr "UART जो डिव्हाइसला डेटा पाठवते. USB साठी 3, TTL साठी 1."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
 msgid "Unique numeric identification for this station."
 msgstr "या स्थानकासाठी अद्वितीय संख्यात्मक ओळख."
 
@@ -122,5 +130,5 @@ msgid "galmon.eu ubxtool"
 msgstr ""
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:12
-msgid "uxbtool Service Configuration"
-msgstr "uxbtool सेवा कॉन्फिगरेशन"
+msgid "ubxtool Service Configuration"
+msgstr "ubxtool सेवा कॉन्फिगरेशन"

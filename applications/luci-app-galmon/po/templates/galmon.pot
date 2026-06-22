@@ -65,6 +65,10 @@ msgstr ""
 msgid "Include augmentation satellites."
 msgstr ""
 
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+msgid "Internal Reference Port"
+msgstr ""
+
 #: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:24
 msgid "Log"
 msgstr ""
@@ -73,11 +77,11 @@ msgstr ""
 msgid "No galmon related logs yet!"
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
 msgid "Owner"
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
 msgid "Owner of this station."
 msgstr ""
 
@@ -85,15 +89,15 @@ msgstr ""
 msgid "Path to serial device where receiver is attached."
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:61
 msgid "Remark"
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:62
 msgid "Remark for this station."
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
 msgid "Remote hostname of collector."
 msgstr ""
 
@@ -101,11 +105,11 @@ msgstr ""
 msgid "SBAS"
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
 msgid "Station ID"
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
 msgid "Submit Destination"
 msgstr ""
 
@@ -114,6 +118,10 @@ msgid "Syslog for ubxtool messages."
 msgstr ""
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:46
+msgid "UART that is sending data to the device. 3 for USB, 1 for TTL."
+msgstr ""
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
 msgid "Unique numeric identification for this station."
 msgstr ""
 
@@ -122,5 +130,5 @@ msgid "galmon.eu ubxtool"
 msgstr ""
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:12
-msgid "uxbtool Service Configuration"
+msgid "ubxtool Service Configuration"
 msgstr ""

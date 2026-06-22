@@ -9,7 +9,7 @@ return view.extend({
 		m = new form.Map('galmon', _('Galmon'),
 			_('Galmon Configuration.'));
 
-		s = m.section(form.TypedSection, 'service', _('uxbtool Service Configuration'));
+		s = m.section(form.TypedSection, 'service', _('ubxtool Service Configuration'));
 		s.anonymous = true;
 
 		o = s.option(form.Flag, 'enabled', _('Enabled'),
@@ -38,27 +38,27 @@ return view.extend({
 		o.default = '1';
 		o.rmempty = false;
 
-		s.option(form.Value, 'port', _('Device Serial Port'),
+		o = s.option(form.Value, 'port', _('Device Serial Port'),
 			_('Path to serial device where receiver is attached.'));
 		o.rmempty = false;
 
-		s.option(form.Value, 'ubxport', _('Internal Reference Port'),
-			_('UART that is sending data to the device. 3 for USB, 1 for ttl.'));
+		o = s.option(form.Value, 'ubxport', _('Internal Reference Port'),
+			_('UART that is sending data to the device. 3 for USB, 1 for TTL.'));
 		o.rmempty = false;
 
-		s.option(form.Value, 'station', _('Station ID'),
+		o = s.option(form.Value, 'station', _('Station ID'),
 			_('Unique numeric identification for this station.'));
 		o.rmempty = false;
 
-		s.option(form.Value, 'destination', _('Submit Destination'),
+		o = s.option(form.Value, 'destination', _('Submit Destination'),
 			_('Remote hostname of collector.'));
 		o.rmempty = false;
 
-		s.option(form.Value, 'owner', _('Owner'),
+		o = s.option(form.Value, 'owner', _('Owner'),
 			_('Owner of this station.'));
 		o.rmempty = false;
 
-		s.option(form.Value, 'remark', _('Remark'),
+		o = s.option(form.Value, 'remark', _('Remark'),
 			_('Remark for this station.'));
 		o.rmempty = false;
 

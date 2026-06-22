@@ -1,5 +1,5 @@
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:32
 msgid "Beidou"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: applications/luci-app-galmon/root/usr/share/rpcd/acl.d/luci-app-galmon.json:3
 msgid "Grant logread access to LuCI app galmon"
-msgstr "Cấp quyền truy cập nhật ký cho galmon ứng dụng LuCI"
+msgstr "Cấp quyền truy cập nhật ký cho ứng dụng LuCI galmon"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:33
 msgid "Include Beidou satellites."
@@ -65,6 +65,10 @@ msgstr "Sử dụng vệ tinh Glonass."
 msgid "Include augmentation satellites."
 msgstr "Sử dụng vệ tinh nâng cao."
 
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+msgid "Internal Reference Port"
+msgstr "Cổng tham chiếu nội bộ"
+
 #: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:24
 msgid "Log"
 msgstr "Nhật ký"
@@ -73,39 +77,39 @@ msgstr "Nhật ký"
 msgid "No galmon related logs yet!"
 msgstr "Chưa có nhật ký liên quan đến galmon!"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
 msgid "Owner"
 msgstr "Chủ nhân"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
 msgid "Owner of this station."
-msgstr "Chủ sở hữu của nhà ga này."
+msgstr "Chủ sở hữu của trạm này."
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:42
 msgid "Path to serial device where receiver is attached."
 msgstr "Đường dẫn đến thiết bị nối tiếp nơi máy thu được gắn vào."
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:61
 msgid "Remark"
 msgstr "Nhận xét"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:62
 msgid "Remark for this station."
 msgstr "Nhận xét cho trạm này."
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
 msgid "Remote hostname of collector."
-msgstr "Tên máy chủ từ xa của bộ sưu tập."
+msgstr "Tên máy chủ từ xa của bộ thu thập."
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:36
 msgid "SBAS"
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
 msgid "Station ID"
 msgstr "Nhận dạng trạm"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
 msgid "Submit Destination"
 msgstr "Gửi điểm đến"
 
@@ -114,6 +118,10 @@ msgid "Syslog for ubxtool messages."
 msgstr "Syslog cho tin nhắn ubxtool."
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:46
+msgid "UART that is sending data to the device. 3 for USB, 1 for TTL."
+msgstr "UART đang gửi dữ liệu đến thiết bị. 3 cho USB, 1 cho TTL."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
 msgid "Unique numeric identification for this station."
 msgstr "Nhận dạng số duy nhất cho trạm này."
 
@@ -122,5 +130,5 @@ msgid "galmon.eu ubxtool"
 msgstr ""
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:12
-msgid "uxbtool Service Configuration"
-msgstr "Cấu hình dịch vụ uxbtool"
+msgid "ubxtool Service Configuration"
+msgstr "Cấu hình dịch vụ ubxtool"

@@ -1,5 +1,5 @@
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:32
 msgid "Beidou"
@@ -31,11 +31,11 @@ msgstr ""
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:9
 msgid "Galmon"
-msgstr ""
+msgstr "ガルモン"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:10
 msgid "Galmon Configuration."
-msgstr "構成"
+msgstr "ガルモンの構成。"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:28
 msgid "Glonass"
@@ -65,6 +65,10 @@ msgstr "Glonass衛星を使用します。"
 msgid "Include augmentation satellites."
 msgstr "増強衛星を使用してください。"
 
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+msgid "Internal Reference Port"
+msgstr "内部リファレンスポート"
+
 #: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:24
 msgid "Log"
 msgstr "ログ"
@@ -73,27 +77,27 @@ msgstr "ログ"
 msgid "No galmon related logs yet!"
 msgstr "ガルモン関連のログはまだありません！"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
 msgid "Owner"
 msgstr "オーナー"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
 msgid "Owner of this station."
-msgstr "この駅の所有者。"
+msgstr "このステーションの所有者。"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:42
 msgid "Path to serial device where receiver is attached."
 msgstr "受信機が接続されているシリアルデバイスへのパス。"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:61
 msgid "Remark"
-msgstr "リマーク"
+msgstr "備考"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:62
 msgid "Remark for this station."
-msgstr "この駅の備考。"
+msgstr "このステーションの備考。"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
 msgid "Remote hostname of collector."
 msgstr "コレクターのリモートホスト名。"
 
@@ -101,11 +105,11 @@ msgstr "コレクターのリモートホスト名。"
 msgid "SBAS"
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
 msgid "Station ID"
 msgstr "ステーションの識別"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
 msgid "Submit Destination"
 msgstr "送信先"
 
@@ -114,6 +118,10 @@ msgid "Syslog for ubxtool messages."
 msgstr "ubxtoolメッセージのSyslog。"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:46
+msgid "UART that is sending data to the device. 3 for USB, 1 for TTL."
+msgstr "デバイスにデータを送信しているUART。USBの場合は3、TTLの場合は1。"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
 msgid "Unique numeric identification for this station."
 msgstr "このステーションの一意の数値ID。"
 
@@ -122,5 +130,5 @@ msgid "galmon.eu ubxtool"
 msgstr ""
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:12
-msgid "uxbtool Service Configuration"
-msgstr "uxbtoolサービス構成"
+msgid "ubxtool Service Configuration"
+msgstr "ubxtoolサービス構成"

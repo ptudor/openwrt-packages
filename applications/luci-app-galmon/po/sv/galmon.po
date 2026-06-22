@@ -1,5 +1,5 @@
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8"
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:32
 msgid "Beidou"
@@ -65,19 +65,23 @@ msgstr "Använd Glonass-satelliter."
 msgid "Include augmentation satellites."
 msgstr "Använd förstärkningssatelliter."
 
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
+msgid "Internal Reference Port"
+msgstr "Intern referensport"
+
 #: applications/luci-app-galmon/root/usr/share/luci/menu.d/luci-app-galmon.json:24
 msgid "Log"
-msgstr "Logga"
+msgstr "Logg"
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/logread.js:15
 msgid "No galmon related logs yet!"
 msgstr "Inga galmon-relaterade loggar än!"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
 msgid "Owner"
 msgstr "Ägare"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
 msgid "Owner of this station."
 msgstr "Ägare av denna station."
 
@@ -85,15 +89,15 @@ msgstr "Ägare av denna station."
 msgid "Path to serial device where receiver is attached."
 msgstr "Sökväg till seriell enhet där mottagaren är ansluten."
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:57
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:61
 msgid "Remark"
 msgstr "Anmärkning"
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:58
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:62
 msgid "Remark for this station."
 msgstr "Anmärkning för denna station."
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:54
 msgid "Remote hostname of collector."
 msgstr "Fjärrvärdnamn för samlare."
 
@@ -101,11 +105,11 @@ msgstr "Fjärrvärdnamn för samlare."
 msgid "SBAS"
 msgstr ""
 
-#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:45
-msgid "Station ID"
-msgstr "Stationidentifiering"
-
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:49
+msgid "Station ID"
+msgstr "Stationsidentifiering"
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:53
 msgid "Submit Destination"
 msgstr "Skicka destination"
 
@@ -114,6 +118,10 @@ msgid "Syslog for ubxtool messages."
 msgstr "Syslog för ubxtool-meddelanden."
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:46
+msgid "UART that is sending data to the device. 3 for USB, 1 for TTL."
+msgstr "UART som skickar data till enheten. 3 för USB, 1 för TTL."
+
+#: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:50
 msgid "Unique numeric identification for this station."
 msgstr "Unik numerisk identifiering för denna station."
 
@@ -122,5 +130,5 @@ msgid "galmon.eu ubxtool"
 msgstr ""
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:12
-msgid "uxbtool Service Configuration"
-msgstr "uxbtool servicekonfiguration"
+msgid "ubxtool Service Configuration"
+msgstr "ubxtool servicekonfiguration"
