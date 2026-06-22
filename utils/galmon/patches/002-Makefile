@@ -1,17 +1,15 @@
-diff --git a/Makefile b/Makefile
-index 8097d30..a9dbfaa 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -1,6 +1,6 @@
 -CFLAGS = -O3 -Wall -ggdb 
-+CFLAGS = -Os -Wall -ggdb
++CFLAGS = -Os -Wall -ggdb -minterlink-mips16 
  
--CXXFLAGS:= -std=gnu++17 -Wall -O0 -ggdb -MMD -MP -fno-omit-frame-pointer -Iext/CLI11 \
-+CXXFLAGS:= -std=gnu++17 -Wall -Os -ggdb -MMD -MP -fno-omit-frame-pointer -Iext/CLI11 \
- 	 -Iext/fmt-9.1.0/include/ -Iext/powerblog/ext/simplesocket -Iext/powerblog/ext/ \
+-CXXFLAGS:= -std=gnu++17 -Wall -O3 -ggdb -MMD -MP -fno-omit-frame-pointer -Iext/CLI11 \
++CXXFLAGS:= -std=gnu++17 -Wall -Os -ggdb -DFMT_HEADER_ONLY -minterlink-mips16 -MMD -MP -fno-omit-frame-pointer -Iext/CLI11 -Iext/powerblog/ext/simplesocket/ext/fmt-5.2.1/include/ \
+ 	 -Iext/powerblog/ext/simplesocket -Iext/powerblog/ext/ \
  	 -I/usr/local/opt/openssl/include/  \
  	 -Iext/sgp4/libsgp4/ \
-@@ -24,8 +24,7 @@ endif
+@@ -23,8 +23,7 @@
  
  CHEAT_ARG := $(shell ./update-git-hash-if-necessary)
  
@@ -21,7 +19,7 @@ index 8097d30..a9dbfaa 100644
  
  all: navmon.pb.cc $(PROGRAMS)
  
-@@ -56,7 +55,10 @@ help2man:
+@@ -55,7 +54,10 @@
  	rm -f $(DESTDIR)$(prefix)/share/man/man1/rtcmtool.1.gz
  	rm -f $(DESTDIR)$(prefix)/share/man/man1/testrunner.1.gz
  
@@ -33,3 +31,12 @@ index 8097d30..a9dbfaa 100644
  	$(INSTALL) -m 755 -d $(DESTDIR)$(prefix)/bin
  	$(foreach binaryfile,$(PROGRAMS),$(INSTALL) -s -m 755 -D ./$(binaryfile) $(DESTDIR)$(prefix)/bin/$(binaryfile);)
  	@echo "using cp instead of install because recursive directories of ascii"
+@@ -121,7 +123,7 @@
+ 
+ 
+ ubxtool: navmon.pb.o ubxtool.o ubx.o bits.o  galileo.o  gps.o beidou.o navmon.o ephemeris.o $(SIMPLESOCKETS) osen.o githash.o nmmsender.o zstdwrap.o 
+-	$(CXX) -std=gnu++17 $^ -o $@ -L/usr/local/lib -lprotobuf -pthread -lzstd -lfmt 
++	$(CXX) -std=gnu++17 $^ -o $@ -L/usr/local/lib -lprotobuf -Wl,--start-group $(patsubst lib%.a,-l%,$(notdir $(wildcard $(STAGING_DIR)/usr/lib/libabsl_*.a $(STAGING_DIR)/usr/lib/libutf8_*.a))) -Wl,--end-group -pthread -lzstd -latomic
+ 
+ septool: navmon.pb.o septool.o bits.o  galileo.o  gps.o beidou.o navmon.o ephemeris.o $(SIMPLESOCKETS) osen.o githash.o nmmsender.o zstdwrap.o 
+ 	$(CXX) -std=gnu++17 $^ -o $@ -L/usr/local/lib -lprotobuf -pthread -lzstd -lfmt	
