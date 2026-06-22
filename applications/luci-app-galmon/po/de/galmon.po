@@ -34,8 +34,8 @@ msgid "Galmon"
 msgstr ""
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:10
-msgid "Galmon Configuration."
-msgstr "Galmon Konfiguration."
+msgid "Galmon shares this receiver's GNSS observations with the galmon.eu collector, which maps satellite-navigation health worldwide. New here, or want to hang out? Join #galileo on OFTC (irc.oftc.net)."
+msgstr "Galmon teilt die GNSS-Beobachtungen dieses Empfängers mit dem galmon.eu-Kollektor, der den Zustand der Satellitennavigation weltweit kartiert. Neu hier oder einfach Lust zu plaudern? Komm zu #galileo auf OFTC (irc.oftc.net)."
 
 #: applications/luci-app-galmon/htdocs/luci-static/resources/view/galmon/config.js:28
 msgid "Glonass"

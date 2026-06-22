@@ -7,7 +7,7 @@ return view.extend({
 		var m, s, o;
 		
 		m = new form.Map('galmon', _('Galmon'),
-			_('Galmon Configuration.'));
+			_('Galmon shares this receiver\'s GNSS observations with the galmon.eu collector, which maps satellite-navigation health worldwide. New here, or want to hang out? Join #galileo on OFTC (irc.oftc.net).'));
 
 		s = m.section(form.TypedSection, 'service', _('ubxtool Service Configuration'));
 		s.anonymous = true;
