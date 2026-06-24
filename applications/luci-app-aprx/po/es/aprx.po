@@ -1,0 +1,50 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:60
+msgid "%s saved."
+msgstr "%s guardado."
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:71
+msgid "%s saved; aprx service restarted."
+msgstr "%s guardado; servicio aprx reiniciado."
+
+#: applications/luci-app-aprx/root/usr/share/luci/menu.d/luci-app-aprx.json:15
+msgid "Configuration"
+msgstr "Configuración"
+
+#: applications/luci-app-aprx/root/usr/share/rpcd/acl.d/luci-app-aprx.json:3
+msgid "Grant access to the aprx config file, log, and service control"
+msgstr "Conceder acceso al archivo de configuración, el registro y el control del servicio de aprx"
+
+#: applications/luci-app-aprx/root/usr/share/luci/menu.d/luci-app-aprx.json:24
+msgid "Log"
+msgstr "Registro"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/logread.js:15
+msgid "No aprx related logs yet!"
+msgstr "¡Aún no hay registros relacionados con aprx!"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/logread.js:24
+msgid "Syslog for aprx messages."
+msgstr "Syslog para los mensajes de aprx."
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:73
+msgid "Unable to apply changes: %s"
+msgstr "No se pueden aplicar los cambios: %s"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:62
+msgid "Unable to save %s: %s"
+msgstr "No se puede guardar %s: %s"
+
+#: applications/luci-app-aprx/root/usr/share/luci/menu.d/luci-app-aprx.json:3
+msgid "aprx APRS iGate"
+msgstr ""
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:41
+msgid "aprx Configuration"
+msgstr "Configuración de aprx"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:44
+msgid "aprx is configured through its native, Apache-style file %s — not UCI. Edit it below, then use Save & Apply to write the file and restart the service. At minimum set your mycall, an interface (serial-device or ax25-device), and a valid APRS-IS passcode."
+msgstr "aprx se configura mediante su archivo nativo de estilo Apache %s, no con UCI. Edítelo a continuación y luego use Guardar y aplicar para escribir el archivo y reiniciar el servicio. Como mínimo, defina su mycall, una interfaz (serial-device o ax25-device) y un passcode de APRS-IS válido."

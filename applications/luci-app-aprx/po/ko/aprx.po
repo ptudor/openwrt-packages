@@ -1,0 +1,50 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:60
+msgid "%s saved."
+msgstr "%s을(를) 저장했습니다."
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:71
+msgid "%s saved; aprx service restarted."
+msgstr "%s을(를) 저장했습니다. aprx 서비스를 다시 시작했습니다."
+
+#: applications/luci-app-aprx/root/usr/share/luci/menu.d/luci-app-aprx.json:15
+msgid "Configuration"
+msgstr "구성"
+
+#: applications/luci-app-aprx/root/usr/share/rpcd/acl.d/luci-app-aprx.json:3
+msgid "Grant access to the aprx config file, log, and service control"
+msgstr "aprx 구성 파일, 로그 및 서비스 제어에 대한 액세스를 허용합니다"
+
+#: applications/luci-app-aprx/root/usr/share/luci/menu.d/luci-app-aprx.json:24
+msgid "Log"
+msgstr "로그"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/logread.js:15
+msgid "No aprx related logs yet!"
+msgstr "아직 aprx 관련 로그가 없습니다!"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/logread.js:24
+msgid "Syslog for aprx messages."
+msgstr "aprx 메시지에 대한 시스템 로그."
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:73
+msgid "Unable to apply changes: %s"
+msgstr "변경 사항을 적용할 수 없습니다: %s"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:62
+msgid "Unable to save %s: %s"
+msgstr "%s을(를) 저장할 수 없습니다: %s"
+
+#: applications/luci-app-aprx/root/usr/share/luci/menu.d/luci-app-aprx.json:3
+msgid "aprx APRS iGate"
+msgstr ""
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:41
+msgid "aprx Configuration"
+msgstr "aprx 구성"
+
+#: applications/luci-app-aprx/htdocs/luci-static/resources/view/aprx/config.js:44
+msgid "aprx is configured through its native, Apache-style file %s — not UCI. Edit it below, then use Save & Apply to write the file and restart the service. At minimum set your mycall, an interface (serial-device or ax25-device), and a valid APRS-IS passcode."
+msgstr "aprx는 UCI가 아니라 자체적인 Apache 스타일 파일 %s을(를) 통해 구성됩니다. 아래에서 편집한 다음 저장 및 적용을 사용하여 파일을 작성하고 서비스를 다시 시작하십시오. 최소한 mycall, 인터페이스(serial-device 또는 ax25-device) 및 유효한 APRS-IS passcode를 설정하십시오."
