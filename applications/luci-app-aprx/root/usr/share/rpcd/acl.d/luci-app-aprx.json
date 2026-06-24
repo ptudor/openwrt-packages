@@ -1,0 +1,17 @@
+{
+	"luci-app-aprx": {
+		"description": "Grant access to the aprx config file, log, and service control",
+		"read": {
+			"file": {
+				"/etc/aprx.conf": [ "read" ],
+				"/sbin/logread": [ "exec" ]
+			}
+		},
+		"write": {
+			"file": {
+				"/etc/aprx.conf": [ "write" ],
+				"/etc/init.d/aprx": [ "exec" ]
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+#!/bin/sh /etc/rc.common
+
+# aprx -- APRS iGate / Digipeater, supervised by procd.
+#
+# aprx is configured through its native Apache-style config file at
+# /etc/aprx.conf, NOT through UCI. Edit that file (mycall, interfaces,
+# aprsis, beacon, digipeater ...) and then `service aprx restart`.
+
+USE_PROCD=1
+
+# Start late, after the network and serial/USB device nodes are up, so the
+# APRS-IS connection and the configured serial-device can be opened.
+START=90
+STOP=10
+
+PROG=/usr/sbin/aprx
+CONF=/etc/aprx.conf
+
+start_service() {
+	# Without a config there is nothing to run; bail rather than have procd
+	# respawn a daemon that immediately exits.
+	[ -f "$CONF" ] || return 1
+
+	# rflog/aprxlog default under /var/log/aprx, which lives on tmpfs and is
+	# gone after every boot -- recreate it before aprx opens its log files.
+	[ -d /var/log/aprx ] || mkdir -m 0755 -p /var/log/aprx
+
+	procd_open_instance aprx
+	# -i keeps aprx in the foreground (it does not fork) so procd can
+	# supervise it, without the verbose -d debug output going to stdout.
+	procd_set_param command "$PROG" -f "$CONF" -i
+	# Restart on `service aprx reload` when the config file changes.
+	procd_set_param file "$CONF"
+	procd_set_param stdout 1
+	procd_set_param stderr 1
+	procd_set_param respawn ${respawn_threshold:-3600} ${respawn_timeout:-5} ${respawn_retry:-5}
+	procd_close_instance
+}

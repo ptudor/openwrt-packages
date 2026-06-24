@@ -1,0 +1,30 @@
+{
+	"admin/services/aprx": {
+		"title": "aprx APRS iGate",
+		"order": 50,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [ "luci-app-aprx" ]
+		}
+	},
+
+	"admin/services/aprx/config": {
+		"title": "Configuration",
+		"order": 1,
+		"action": {
+			"type": "view",
+			"path": "aprx/config"
+		}
+	},
+
+	"admin/services/aprx/log": {
+		"title": "Log",
+		"order": 2,
+		"action": {
+			"type": "view",
+			"path": "aprx/logread"
+		}
+	}
+}
