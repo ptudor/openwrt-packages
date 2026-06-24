@@ -1,0 +1,19 @@
+--- a/aprx.h
++++ b/aprx.h
+@@ -105,6 +105,16 @@
+ #include <sys/socket.h>
+ #include <netdb.h>
+ #include <netinet/in.h>
++
++/* OpenWrt: no Linux kernel AX.25.  A KISS TNC on a serial port is read
++ * directly; PF_AX25 sockets and libax25 <netax25/ax25.h> (absent from the
++ * musl sysroot) are only needed for the native Linux AX.25 interface.
++ * aprx gates every AX.25 code path on #ifdef PF_AX25, so undefining it
++ * here -- after <sys/socket.h> defines it, before any aprx code uses it --
++ * disables AX.25 consistently across all translation units. */
++#ifdef PF_AX25
++#undef PF_AX25
++#endif
+ 
+ /* Radio interface groups on igate receiption history tracking.
+  * Value range:  1 to MAX_IF_GROUP-1.

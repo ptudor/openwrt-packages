@@ -1,0 +1,31 @@
+Link the final binaries with the C compiler driver, not raw ld.
+
+aprx's Makefile.in sets LD=@CC@ and links the programs with $(LD), so upstream
+the final link normally runs through the compiler driver. OpenWrt's build
+overrides LD on the make command line (LD="..-ld.bfd"), which wins over the
+Makefile assignment, so the link rule invokes ld.bfd directly:
+
+  ..-ld.bfd ... -o aprx aprx.o ... -pthread
+  ..-ld.bfd: unrecognized option '-pthread'
+
+-pthread (and the -fuse-ld=bfd in LDFLAGS) are compiler-driver options, not
+linker options; a threaded C program must be linked via $(CC) so the driver
+adds the C runtime/crt objects and translates -pthread. Use $(CC) for the two
+final-link rules. OpenWrt sets CC to the cross gcc, which honours -pthread and
+-fuse-ld=bfd, so this links cleanly and is the portable, conventional form.
+
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -99,10 +99,10 @@
+ 
+ 
+ $(PROGAPRX):	$(OBJSAPRX) VERSION Makefile
+-		$(LD) $(LDFLAGS) -o $@ $(OBJSAPRX) $(LIBS)
++		$(CC) $(LDFLAGS) -o $@ $(OBJSAPRX) $(LIBS)
+ 
+ $(PROGSTAT):	$(OBJSSTAT) VERSION Makefile
+-		$(LD) $(LDFLAGS) -o $@ $(OBJSSTAT) $(LIBS)
++		$(CC) $(LDFLAGS) -o $@ $(OBJSSTAT) $(LIBS)
+ 
+ .PHONY:		man
+ man:		$(MAN)
