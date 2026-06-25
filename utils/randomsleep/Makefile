@@ -15,14 +15,15 @@ PKG_NAME:=randomsleep
 PKG_VERSION:=1.0.0
 PKG_RELEASE:=1
 
-# Pinned to randomsleep main @ f7cc6df ("Improve production readiness ...").
+# Pinned to the upstream 1.0.0 release tag (== commit f7cc6df, "Improve
+# production readiness ..."). PKG_MIRROR_HASH locks the generated source
+# tarball, so a moved/retagged release is rejected rather than silently pulled.
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/ptudor/randomsleep.git
-PKG_SOURCE_VERSION:=f7cc6df26d1d9237772380c2e4e841eb94df8957
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
+PKG_SOURCE_VERSION:=1.0.0
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-# The first `make package/randomsleep/download` prints the tarball sha256; paste
-# it back here as PKG_MIRROR_HASH:=<sha256> to pin the download mirror.
+PKG_MIRROR_HASH:=c5befbe6888fa5795bd0ded758a70de8e21a6a35955aacd211d207b6390ee457
 
 PKG_MAINTAINER:=Patrick Tudor <openwrt@ptudor.net>
 PKG_LICENSE:=ISC

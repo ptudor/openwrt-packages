@@ -5,8 +5,10 @@ intended for cron jobs to add jitter and avoid the *thundering herd* problem
 where many devices hit a server at the same second. Upstream:
 [ptudor/randomsleep](https://github.com/ptudor/randomsleep).
 
-The source is pinned to `main` commit `f7cc6df`. The package builds the Linux
-variant (`grandomsleep.c`), which uses the `getrandom(2)` syscall with rejection
+The source is pinned to the upstream **1.0.0** release tag (commit `f7cc6df`),
+and `PKG_MIRROR_HASH` locks the generated tarball so a moved/retagged release is
+rejected rather than silently pulled. The package builds the Linux variant
+(`grandomsleep.c`), which uses the `getrandom(2)` syscall with rejection
 sampling for an unbiased range -- this compiles cleanly against musl on the
 ramips/MIPS targets with no source changes.
 
@@ -37,17 +39,17 @@ Select **Utilities -> randomsleep** in menuconfig, then build your image:
 make menuconfig && make V=s download && time make V=s
 ```
 
-### Pin the download mirror (optional, recommended)
+### Source mirror is pinned
 
-The Makefile intentionally omits `PKG_MIRROR_HASH`. The first download prints
-the tarball checksum:
+`PKG_MIRROR_HASH` is already set to the sha256 of the 1.0.0 source tarball, so
+the download is locked. If you ever bump `PKG_SOURCE_VERSION`, refresh it from:
 
 ```
 make package/randomsleep/download V=s
 ```
 
-Copy the printed `PKG_MIRROR_HASH:=<sha256>` line into `utils/randomsleep/Makefile`
-to lock the source tarball.
+and paste the printed `PKG_MIRROR_HASH:=<sha256>` back into
+`utils/randomsleep/Makefile`.
 
 ## Usage
 
